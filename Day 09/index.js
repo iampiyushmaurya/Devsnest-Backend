@@ -7,8 +7,7 @@ app.set("view engine", "jade");
 
 
 app.use('/', (req, res) => {
-    // res.sendFile(path.join(__dirname, "public/image.jfif"));
-    // res.download(path.join(__dirname, "public/text.json"), "hello.json");
+ 
     res.render('index', { title: "Express" })
 })
 
