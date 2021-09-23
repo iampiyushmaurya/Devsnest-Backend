@@ -1,0 +1,38 @@
+redis-cli
+
+SET name piyush
+Get name
+Set age 28
+DEl age
+EXISTS age
+KEYS *
+FLUSHALL
+SET name piyush
+TTL name
+EXPIRE name 10
+SETEX name 10 piyush
+
+Array in redis
+
+LPUSH friends john
+RPUSH friends roy
+LRANGE friends johnathon
+LRANGE friends 0 -1
+LPOP friends
+RPOP friends
+
+Set in redis (values can't be repeated)
+
+SADD hobbies "weight lifting"
+SADD hobbies weight
+SMEMBERS hobbies
+
+Object in redis
+
+HSET person name piyush
+HGET person name
+HGETALL person
+HSET person age 28
+HGETALL person
+HDEL person age
+HEXISTS person name
